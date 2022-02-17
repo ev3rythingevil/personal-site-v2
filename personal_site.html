@@ -13,13 +13,104 @@
     <body>
         <div>
             <header>
-                <img src="https://imgur.com/Ww3bLBD" alt="profile picture headshot" id="headshot"/>
+                <img src="https://imgur.com/Ww3bLBD.jpg" alt="profile picture headshot" id="headshot" width="50%"/>
                 <h1>Hathor Hamilton</h1>
                 <p>Full Stack Software Engineer with a focus on JavaScript and React</p>
                 <p>Based in Brooklyn, New York</p>
+                    <div id="navBar">
+                        <a href="https://github.com/ev3rythingevil" target="_blank">Github</a>
+                        <a href="https://docs.google.com/document/d/1ikFDM0mIvNXuwdb6DiX9ilZDxSz16zTi2q0H70Kgk9w/edit?usp=sharing" target="_blank">Resume</a>
+                        <a href="https://medium.com/@koshknot" target="_blank">Blog</a> 
+                        <a href="https://www.linkedin.com/in/hathor-hamilton-76ba5a219/" target="_blank">LinkedIn</a> 
+                    </div>
             </header>
         </div>
+        <!-- Build three separate divs class="infoCard" and turn them into 'cards' so they can sit side by side. Have the column for mobile view. use display: grid-->
+        <div class="infoCardContainer">
+            <div class="infoCard">
+                <h3>Tech Stack</h3>
+                <table>
+                    <tr>
+                        <td>React.js</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby on Rails</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSQL</td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="infoCard">
+                <h3>About Me</h3>
+                <p>I started coding with a focus on web design in December of 2020. Using websites such as Coursera and Codecadamy, I quickly learned the basics of front-end web development with JavaScript, HTML and CSS. After spending some time with self taught courses, I decided to sign up for the Software Engineering course at Flatiron School, in order to propel myself into a new career. My background in hospitality ensures that I always work with the customer in mind, ensuring that my apps are geared towards user experience! I look forward to continuing to learn and grow in the exciting field of technology.
 
+                    My dream is to work with companies and on projects that focus on excellent user experience. I intend to continue building apps and projects, and hope to one day branch out into the mobile application side of programming.</p>
+            </div>
+
+            <div class="infoCard">
+                <h3>Education</h3>
+                <table>
+                    <tr>
+                        <td>Flatiron School: Software Engineering - 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Michigan University through Coursera: Web Design for Everybody - 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Duke University through Coursera: Software Engineering Fundamentals - 2020
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- begin project section-->
+        <div id="projectDiv">
+
+            <div id="projectOne" class="project">
+            
+                <h2>Project: Band Together</h2>
+                <p>Band Together is an application created to help musicians find other local players in order to form a band. Upon signing up, members can click through profiles that appear on their main page, and chat with mutual matches. The app also uses location information to only show you users within a certain radius. I used self referential tables in Ruby on Rails to allow the users to match, and the front end is built on React. </p>
+                <div class="projectImage">
+                    <img src="https://i.imgur.com/Nq4GRBK.png" alt="bandTogether profile page"  width="50%" >
+                </div>
+            
+            </div>
+
+            <div id="projectTwo" class="project">
+
+                <h2>Project: Tarot Reader</h2>
+                <p>In this application, random tarot cards were generated for users, and displayed with a brief description of the card and it's meaning. Users could save cards to a database, so they could look back at the history of their readings. This app was built in React with a JSON server running as a mock back end.
+                    <div>
+                        <img src="https://i.imgur.com/P8g8nuf.jpg" alt="tarot app image" alt="tarot reader image"  width="50%" >
+                        <img src="https://i.imgur.com/VzkkB2m.jpg" alt="Tarot app image2" alt="tarot reader image"  width="50%" >
+                    </div>
+
+                </p>
+
+            </div>
+
+
+        
+        </div>
 
     </body>
+
+  
+    
 </html>
